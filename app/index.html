@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>º_º</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{BASE_TAG}}
+
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/nothing.css">
+  </head>
+  <body>
+
+    <footer>
+      Created By <a href="http://ryantablada.com">Ryan Tablada</a>
+    </footer>
+    <script>
+      window.NothingENV = {{ENV}};
+      window.EmberENV = window.NothingENV.EmberENV;
+    </script>
+    <script src="assets/vendor.js"></script>
+    <script src="assets/nothing.js"></script>
+    <script>
+      window.Nothing = require('nothing/app')['default'].create(NothingENV.APP);
+    </script>
+  </body>
+</html>
